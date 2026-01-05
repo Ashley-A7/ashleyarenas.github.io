@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h1,
+h2,
+h4,
+.logo {
+    font-family: "Playball", cursive;
+    text-transform: capitalize;
+}
+
+h1 {
+    color: rgb(251, 127, 19);
+    font-size: 37px;
+    animation: 4s colorchange forwards;
+}
+
+@keyframes colorchange {
+    0% {
+        color: rgb(251, 127, 19);
+    }
+
+    50% {
+        color: rgb(252, 31, 124);
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+h2 {
+    font-size: 27px;
+}
+
+h3 {
+    color: rgb(252, 99, 146);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+.container-fluid {
+    width: 90%;
+}
+
+.custom-btn {
+    padding: 6px 15px;
+    color: white;
+    transition: 0.5s;
+    border-radius: 0;
+    border: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.custom-btn:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* -- POP UP WINDOW -- */
+.popup {
+    max-width: 400px;
+    display: none;
+}
+
+.popup .custom-btn {
+    background: rgb(252, 31, 124);
+}
+
+/* -- HEADER SECTION -- */
+.logo {
+    color: rgb(252, 99, 146);
+    font-size: 25px;
+}
+
+.nav-item a {
+    transition: 0.5s;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+    color: rgb(252, 99, 146);
+}
+
+/* -- HERO SECTION -- */
+.hero {
+    padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url(https://images.unsplash.com/photo-1651346851254-a1c60422b0d7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    text-align: center;
+}
+
+.underline:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 110%;
+    max-width: 300px;
+    background-color: rgb(252, 99, 146);
+    margin: 2px auto 0;
+}
+
+.hero-title {
+    animation: 4s titledown forwards;
+    margin-bottom: 50px;
+}
+
+@keyframes titledown {
+    0% {
+        transform: translateY(0);
+        margin-bottom: 50px;
+    }
+
+    100% {
+        transform: translateY(40px);
+    }
+}
+
+.hero .custom-btn {
+    background: linear-gradient(to right, rgb(251, 127, 19), rgb(252, 31, 124));
+    margin-bottom: 15px;
+}
+
+/* -- DISCOVER SECTION */
+.discover .custom-btn {
+    background: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.discover-content p:nth-of-type(1) {
+    font-weight: 500;
+}
+
+.discover-bg-img {
+    background-image: url(https://plus.unsplash.com/premium_photo-1714934626416-1f4fed9f667d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center 60%;
+    height: 230px;
+}
+
+/* -- MENU SECTION -- */
+.menu {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url(https://images.unsplash.com/photo-1651346851254-a1c60422b0d7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    color: rgb(255, 255, 255);
+}
+
+.menu .menu-item {
+    padding: 10px;
+}
+
+/* -- BLOG SECTION -- */
+.blog-title {
+    text-align: center;
+}
+
+.blog button {
+    margin-bottom: 10px;
+    background: rgb(252, 99, 146);
+    padding: 3px;
+}
+
+.blog-img {
+    background-size: cover;
+    background-position: bottom;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.cupcake-img {
+    background-image: url(https://images.unsplash.com/photo-1639330800481-bf202492784b?q=80&w=2694&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.shortcake-img {
+    background-image: url(https://images.unsplash.com/photo-1567691334394-c0d00a7716db?q=80&w=2660&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+/* -- GALLERY SECTION -- */
+.gallery {
+    padding: 30px 0;
+}
+
+.slick-arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.5s;
+    background-image: url(https://cdn-icons-png.flaticon.com/256/11181/11181468.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.slick-prev {
+    z-index: 1;
+    transform: translate(-50%, -50%) scaleX(-1);
+    left: 0;
+}
+
+.slick-next {
+    transform: translate(50%, -50%);
+    right: 0;
+}
+
+.slick-arrow:hover {
+    opacity: 1;
+}
+
+.slick-slide {
+    height: auto;
+    margin: 0 2px;
+}
+
+.slick-list {
+    margin: 0 -2px;
+}
+
+.gallery-slide {
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    width: 150px;
+}
+
+.gallery-1 {
+    background-image: url(https://images.pexels.com/photos/6403383/pexels-photo-6403383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+.gallery-2 {
+    background-image: url(https://images.unsplash.com/photo-1583743089695-4b816a340f82?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.gallery-3 {
+    background-image: url(https://sallysbakingaddiction.com/wp-content/uploads/2024/01/napoleon-pastry-mille-feuille.jpg);
+}
+
+.gallery-4 {
+    background-image: url(https://goldbelly.imgix.net/uploads/showcase_media_asset/image/220888/Strawberry-Hill-Baking-Co-Sampler-Cheesecake.jpg?ixlib=react-9.9.0&ar=1%3A1&fit=crop&w=3840&auto=format);
+}
+
+.gallery-5 {
+    background-image: url(https://images.pexels.com/photos/15120744/pexels-photo-15120744/free-photo-of-close-up-of-cupcakes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+.gallery-6 {
+    background-image: url(https://andyskitchenblog.wordpress.com/wp-content/uploads/2013/08/20130728_145300.jpg);
+}
+
+.gallery-7 {
+    background-image: url(https://images.pexels.com/photos/8625940/pexels-photo-8625940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+.gallery-8 {
+    background-image: url(https://images.pexels.com/photos/4765839/pexels-photo-4765839.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+.gallery-9 {
+    background-image: url(https://images.pexels.com/photos/33715/cake-pops-pastries-cake-sweet.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+/* -- FOOTER SECTION --*/
+.footer-flex {
+    padding: 10px 0;
+}
+
+.socials-icon {
+    padding: 10px 0;
+}
+
+.pink-bg {
+    background: rgb(252, 99, 146);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.socials-icon {
+    list-style: none;
+    gap: 5px;
+}
+
+.socials-icon img {
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+}
+
+/* -- PHONES -- */
+@media only screen and (min-width: 576px) {
+
+    section {
+        padding: 60px 0;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    .hero {
+        padding: 150px 0;
+    }
+
+    .discover-bg-img {
+        height: 370px;
+    }
+
+    .blog-img {
+        height: 230px;
+    }
+}
+
+/* -- TABLETS -- */
+@media only screen and (min-width: 768px) {
+    section {
+        padding: 65px 0;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    h4 {
+        font-size: 27px;
+    }
+
+    .hero {
+        padding: 170px 0;
+    }
+
+    .discover-bg-img {
+        height: 400px;
+    }
+
+    .menu .menu-item {
+        padding: 15px;
+    }
+}
+
+
+/* -- LAPTOPS -- */
+@media only screen and (min-width: 992px) {
+    section {
+        padding: 70px 0;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h4 {
+        font-size: 29px;
+    }
+
+    .container-fluid {
+        width: 80%;
+    }
+
+    .hero {
+        padding: 200px 0;
+    }
+
+    .discover-bg-img {
+        height: 400px;
+    }
+
+    .blog-img {
+        height: 300px;
+    }
+}

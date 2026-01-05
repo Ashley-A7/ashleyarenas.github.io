@@ -1,0 +1,46 @@
+.nav {
+    padding: 0 20px;
+}
+
+.nav a {
+    text-transform: uppercase;
+    padding: 10px;
+    color: #ffffff;
+    display: inline-block;
+    transition: color 120ms ease-out;
+}
+
+.menu-items {
+    position: absolute;
+    top: 100%;
+    width: max-content;
+    max-width: 25ch;
+    background: #ffffff;
+    padding: 5px;
+    transition: opacity 120ms ease-out;
+}
+
+/* --DROPDOWN-- */
+.dropdown {
+    position: relative;
+}
+
+.dropdown a {
+    display: block;
+    transition: background-color 120ms ease-out;
+}
+
+.dropdown:not(:hover) .menu-items {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 576px) {
+    .menu-items {
+        display: none;
+    }
+
+    .dropdown i {
+        display: none;
+    }
+}

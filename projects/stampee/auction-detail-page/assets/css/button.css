@@ -1,0 +1,19 @@
+.button {
+    display: inline-block;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 120ms ease-out;
+}
+
+.white-button {
+    text-transform: uppercase;
+    border: 1px solid #1c3963;
+    background: white;
+    color: #1c3963;
+}
+
+.white-button:hover {
+    background-color: #f0f0f0;
+}

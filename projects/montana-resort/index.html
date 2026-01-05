@@ -1,0 +1,217 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Creation - Assignment 01 - Ashley</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome logo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  animate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="popup-overlay">
+        <button class="close-btn">
+            <i class="fa-solid fa-rectangle-xmark"></i>
+        </button>
+
+        <div class="popup-content">
+            <iframe src="https://www.youtube.com/embed/yi6e9yKBfj8?si=slrK5RcB_8SuazFt" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="popup-overlay-learn">
+        <button class="close-btn">
+            <i class="fa-solid fa-rectangle-xmark"></i>
+        </button>
+
+        <div class="popup-content-learn">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809944.0153924567!2d-115.37969473380501!3d46.54598650034901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53500c2b107d01f3%3A0x8a1ea7ffc4782a74!2sBig%20Sky%20Resort!5e0!3m2!1sen!2sca!4v1741816491760!5m2!1sen!2sca"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-flex">
+
+                <div class="logo">
+                    <div class="logo-flex">
+                        <i class="fa-solid fa-umbrella-beach"></i>
+                        <h2>Montana Resort</h2>
+                    </div>
+                </div>
+
+                <div class="burger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="menu-holder">
+                    <ul class="menu-listing">
+                        <li>
+                            <a href="">home</a>
+                        </li>
+
+                        <li>
+                            <a href="">offers</a>
+                        </li>
+
+                        <li>
+                            <a href="">booking</a>
+                        </li>
+
+                        <li>
+                            <a href="">about us</a>
+                        </li>
+
+                        <li>
+                            <a href="">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-banner">
+        <div class="container">
+
+            <div class="filter"></div>
+
+            <h1>Montana Resort</h1>
+            <p>Unlock to enjoy the view of Martine</p>
+
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+
+            <div class="about-flex">
+
+                <div class="about-info">
+                    <h4>about us</h4>
+                    <h2>a luxuries hotel with nature</h2>
+                    <p>At Montana Resort, luxury meets nature in a serene escape, where stunning landscapes and
+                        world-class amenities create the perfect retreat. Experience ultimate relaxation with
+                        breathtaking views and exceptional service.
+                    </p>
+                    <a href="" class="learn-click">Learn More</a>
+                </div>
+
+                <div class="about-images">
+                    <div class="about-img" data-aos="fade-right" data-aos-duration="3000" data-aos-mirror="false"
+                        data-aos-once="true"></div>
+
+                    <div class="about-img" data-aos="fade-left" data-aos-duration="3000" data-aos-mirror="false"
+                        data-aos-once="true"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="offers">
+        <div class="container">
+
+            <div class="offers-header">
+                <h4>our offers</h4>
+                <h2>Ongoing Offers</h2>
+            </div>
+
+            <div class="card-grid">
+
+                <article class="card-holder">
+                    <div class="card-image-holder">
+                        <div class="animation-info animation-info-1">
+                            <p>Enjoy the perfect blend of modern style and scenic views in our suites.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <p>Up to 35% savings on Club rooms and Suites</p>
+                    </div>
+
+                    <div class="booking">
+                        <h4>book now</h4>
+                    </div>
+                </article>
+
+                <article class="card-holder">
+                    <div class="card-image-holder">
+                        <div class="animation-info animation-info-2">
+                            <p>Enjoy the perfect blend of modern style and scenic views in our suites.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <p>Up to 35% savings on Club rooms and Suites</p>
+                    </div>
+
+                    <div class="booking">
+                        <h4>book now</h4>
+                    </div>
+                </article>
+
+                <article class="card-holder">
+                    <div class="card-image-holder">
+                        <div class="animation-info animation-info-3">
+                            <p>Enjoy the perfect blend of modern style and scenic views in our suites.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <p>Up to 35% savings on Club rooms and Suites</p>
+                    </div>
+
+                    <div class="booking">
+                        <h4>book now</h4>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="vacation-video">
+        <div class="container">
+            <h4>montana sea view</h4>
+            <h2>relax and enjoy your vacation</h2>
+            <a class="play-btn" href="">
+                <i class="fa-solid fa-play"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer>&copy;2025, Montana Resort. All rights reserved.</footer>
+
+</body>
+
+</html>
