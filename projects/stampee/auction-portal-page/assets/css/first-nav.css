@@ -1,0 +1,35 @@
+.first-nav {
+    grid-area: first-nav;
+    background-color: #1c3963;
+    z-index: 2;
+}
+
+.first-nav .nav-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.first-nav a {
+    color: #ffffff;
+}
+
+.first-nav a:hover {
+    color: #fecc6d;
+}
+
+.first-nav .menu-items {
+    background: #1c3963;
+}
+
+.first-nav .menu-items a:hover {
+    color: #fecc6d;
+    background: #122a4b;
+}
+
+@media (max-width: 576px) {
+    .first-nav {
+        display: none;
+    }
+}

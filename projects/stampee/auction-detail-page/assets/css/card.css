@@ -1,0 +1,32 @@
+.card {
+    background: #ffffff;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card h3 {
+    font-size: 13px;
+    margin-bottom: 10px;
+    transition: color 120ms ease-out;
+    cursor: pointer;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card p {
+    min-width: 10ch;
+}
+
+.card img {
+    max-width: 100%;
+    height: 100px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.card-info {
+    padding: 10px;
+}

@@ -1,0 +1,49 @@
+.card {
+    background: #ffffff;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card picture {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #ebebeb;
+    cursor: pointer;
+}
+
+.card img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.card-info {
+    padding: 10px;
+}
+
+.card-info h3 {
+    transition: color 120ms ease-out;
+    cursor: pointer;
+}
+
+.card-info h3:hover {
+    text-decoration: underline;
+    color: #336699;
+}
+
+.card-info>*+* {
+    margin-top: 10px;
+}
+
+.card-info>*+a {
+    margin-top: 20px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+}

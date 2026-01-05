@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description"
+            content="Explore auctions, guides, and the world of rare collectible stamps with Stampee.">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Applied UX/UI - Mockup 01 - Ashley Arenas</title>
+
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+
+        <!-- font-awesome  for icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+
+        <link rel="preload" as="image" href="assets/images/hero-banner.webp">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <nav class="first-nav nav">
+            <div class="nav-wrapper">
+                <a href="">login / sign up</a>
+                <div class="dropdown">
+                    <a href="">about <i class="fa-solid fa-angle-down"></i></a>
+
+                    <div class="menu-items">
+                        <a href="">about lord reginald stampee III</a>
+                        <a href="">philately is life</a>
+                        <a href="">the duke's biography</a>
+                        <a href="">family history</a>
+                        <a href="">about us</a>
+                    </div>
+                </div>
+
+                <a href="">contact us</a>
+
+                <div class="dropdown">
+                    <a href="">EN <i class="fa-solid fa-angle-down"></i></a>
+
+                    <div class="menu-items">
+                        <a href="">EN</a>
+                        <a href="">FR</a>
+                        <a href="">DE</a>
+                        <a href="">ES</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <nav class="second-nav nav">
+            <input type="checkbox" id="burger" aria-label="Burger navigation toggle">
+
+            <div class="nav-wrapper">
+
+                <img src="assets/images/stampee-logo.webp" alt="Stampee logo">
+
+                <div class="menu-items-wrapper">
+                    <div class="dropdown">
+                        <a href="">auction <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="menu-items">
+                            <a href="">current</a>
+                            <a href="">upcoming</a>
+                            <a href="">archives</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="">how it works <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="menu-items">
+                            <a href="">profile help</a>
+                            <a href="">how to bid</a>
+                            <a href="">how to follow an auction</a>
+                            <a href="">how to find the desired auction</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="">news <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="menu-items">
+                            <a href="">stamps</a>
+                            <a href="">auction</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header class="header">
+            <h1>Stamps from Around the World</h1>
+            <p>Explore unique stamps from every corner of the globe, each telling a story of history and culture</p>
+        </header>
+
+        <aside class="aside">
+            <form>
+
+                <label for="keywords">Keywords</label>
+                <input type="search" id="keywords" name="keywords" placeholder="Search for lots">
+
+
+                <fieldset>
+                    <legend>Status</legend>
+
+                    <div>
+                        <input type="checkbox" id="sold" name="status" value="sold">
+                        <label for="sold">Sold</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="unsold" name="status" value="unsold">
+                        <label for="unsold">Unsold</label>
+                    </div>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Price Range</legend>
+
+                    <label for="price-min">Min Price</label>
+                    <input type="number" id="price-min" name="price-min">
+
+                    <label for="price-max">Max Price</label>
+                    <input type="number" id="price-max" name="price-max">
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Year of Issue</legend>
+
+                    <label for="year-min">From</label>
+                    <input type="number" id="year-min" name="year-min">
+
+                    <label for="year-max">To</label>
+                    <input type="number" id="year-max" name="year-max">
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Condition</legend>
+
+                    <div>
+                        <input type="checkbox" id="used" name="condition" value="used">
+                        <label for="used">Used</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="unused" name="condition" value="unused">
+                        <label for="unused">Unused</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="mint" name="condition" value="mint">
+                        <label for="mint">Mint</label>
+                    </div>
+                </fieldset>
+
+
+                <label for="country">Country of Origin</label>
+                <select name="country" id="country">
+                    <option value="">--Select a country--</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="germany">Germany</option>
+                    <option value="japan">Japan</option>
+                    <option value="china">China</option>
+                    <option value="spain">Spain</option>
+                    <option value="singapore">Singapore</option>
+                </select>
+
+                <a href="" class="button button-dk-blue">search</a>
+            </form>
+        </aside>
+
+        <main class="main">
+            <h2>spring 2025 auction listing</h2>
+
+            <div class="listing-view">
+                <a class="button button-control" aria-label="Open filters">
+                    <img src="assets/icons/filter.svg" alt="">
+                </a>
+
+                <a class="button button-control" aria-label="Grid view">
+                    <img src="assets/icons/view-grid.svg" alt="">
+                </a>
+
+                <a class="button button-control" aria-label="List view">
+                    <img src="assets/icons/view-list.svg" alt="">
+                </a>
+            </div>
+
+
+            <div class="grid">
+                <article class="card">
+                    <picture>
+                        <img src="assets/images/antigua-stamp.webp" alt="1949 Antigua Stamp Image">
+                    </picture>
+
+                    <div class="card-info">
+                        <p>Lot: 1008</p>
+                        <h3>1949 UPU 1/- red-brown large part o.g., showing ‘C’ of CA in watermark omitted. Presently
+                            unlisted; rare. SG 117 var
+                        </h3>
+
+                        <div class="price">
+                            <p>Start Price:</p>
+                            <p><strong>$260</strong></p>
+                        </div>
+
+                        <a href="" class="button button-dk-blue">Place a bid</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <picture>
+                        <img src="assets/images/great-britain-stamp.webp" alt="Great Britain Stamp">
+                    </picture>
+
+                    <div class="card-info">
+                        <p>Lot: 44</p>
+                        <h3>1958 4½d chestnut, graphite lined imprimatur, horizontal imperforate pair,</h3>
+
+                        <div class="price">
+                            <p>Start Price:</p>
+                            <p><strong>$200</strong></p>
+                        </div>
+
+                        <a href="" class="button button-dk-blue">Place a bid</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <picture>
+                        <img src="assets/images/canada-stamp.webp" alt="Canadian Special Delivery Air Stamp">
+                    </picture>
+
+                    <div class="card-info">
+                        <p>Lot: 125</p>
+                        <h3>Canada Scott #CE3 MLH 17 cent bright ultramarine Trans-Atlantic Airplane over Quebec Air
+                            Mail Special Delivery stamp.
+                        </h3>
+
+                        <div class="price">
+                            <p>Start Price:</p>
+                            <p><strong>$240</strong></p>
+                        </div>
+
+                        <a href="" class="button button-dk-blue">Place a bid</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <picture>
+                        <img src="assets/images/ascension-stamp.webp" alt="Ascension Stamp">
+                    </picture>
+
+                    <div class="card-info">
+                        <p>Lot: 106</p>
+                        <h3>Ascension: 1924-33 1s. grey-black and brown variety ‘torn flag’ mint, lightly toned gum,
+                            otherwise fine. S.G. 18b, cat. £400.
+                        </h3>
+
+                        <div class="price">
+                            <p>Start Price:</p>
+                            <p><strong>$100</strong></p>
+                        </div>
+
+                        <a href="" class="button button-dk-blue">Place a bid</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <picture>
+                        <img src="assets/images/australia-stamp.webp" alt="Australian Stamp">
+                    </picture>
+
+                    <div class="card-info">
+                        <p>Lot: 67</p>
+                        <h3>Australia AAT #L3 1959 1 Shilling Green Dog-team, Iceberg & Map MNH-Fine.
+                        </h3>
+
+                        <div class="price">
+                            <p>Start Price:</p>
+                            <p><strong>$250</strong></p>
+                        </div>
+
+                        <a href="" class="button button-dk-blue">Place a bid</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <picture>
+                        <img src="assets/images/german-stamp.webp" alt="1861 German Stamp">
+                    </picture>
+
+                    <div class="card-info">
+                        <p>Lot: 347</p>
+                        <h3>1861 10gr Dark greenish olive, ample to full margins, large part o.g., Very Fine; signed
+                            Brun (Scott 24; Mi EUR360)</h3>
+
+                        <div class="price">
+                            <p>Start Price:</p>
+                            <p><strong>$240</strong></p>
+                        </div>
+
+                        <a href="" class="button button-dk-blue">Place a bid</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <picture>
+                        <img src="assets/images/belgium-stamp.webp" alt="Belgium Stamp">
+                    </picture>
+
+                    <div class="card-info">
+                        <p>Lot: 201</p>
+                        <h3>Belgium stamps from the 1952 World Postal Congress - Brussel
+                        </h3>
+
+                        <div class="price">
+                            <p>Start Price:</p>
+                            <p><strong>$2000</strong></p>
+                        </div>
+
+                        <a href="" class="button button-dk-blue">Place a bid</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <picture>
+                        <img src="assets/images/nz-stamp.webp" alt="Two New Zealand Stamps">
+                    </picture>
+
+                    <div class="card-info">
+                        <p>Lot: 710</p>
+                        <h3>New Zealand 1915-25 official 2s, 5s in the most perfect condition 14
+                        </h3>
+
+                        <div class="price">
+                            <p>Start Price:</p>
+                            <p><strong>$65</strong></p>
+                        </div>
+
+                        <a href="" class="button button-dk-blue">Place a bid</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="pagination">
+                <a class="button button-control" href="?page=prev">Previous</a>
+                <a class="button button-control" href="?page=1" aria-current="page">1</a>
+                <a class="button button-control" href="?page=2">2</a>
+                <a class="button button-control" href="?page=3">3</a>
+                <a class="button button-control" href="?page=next">Next</a>
+            </div>
+        </main>
+
+        <nav class="bottom-nav">
+
+            <div class="nav-wrapper">
+                <div>
+                    <h3>help and information</h3>
+                    <a href="">FAQs</a>
+                    <a href="">Buying & Selling Guides</a>
+                    <a href="">Terms & Conditions</a>
+                    <a href="">Privacy Policy</a>
+                </div>
+
+                <div>
+                    <h3>community</h3>
+                    <a href="">Forums</a>
+                    <a href="">Facebook group</a>
+                    <a href="">Giveaways</a>
+                </div>
+
+                <div>
+                    <h3>locations</h3>
+                    <a href="">United Kingdom</a>
+                    <a href="">Canada</a>
+                    <a href="">United States</a>
+                    <a href="">Australia</a>
+                </div>
+
+                <div>
+                    <h3>contact</h3>
+                    <a href="">+1(438)-380-5423</a>
+                    <a href="">info@stampee.com</a>
+                    <a href="">811 Princess Ave, Montreal, BC V8T 1K7</a>
+                    <a href="">P.O. Box 5096, Station 9, Montreal, QC V8R 6N3</a>
+                </div>
+            </div>
+
+        </nav>
+
+        <footer class="footer">
+            <p>2025 © Stampee Auction House. All rights reserved.</p>
+        </footer>
+    </body>
+
+</html>

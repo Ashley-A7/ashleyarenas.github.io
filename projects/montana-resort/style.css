@@ -1,0 +1,794 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Exo 2", sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+body.popup-is-open {
+    height: 100%;
+    overflow-y: hidden;
+    margin-right: 15px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 15px;
+    color: rgb(79, 153, 227);
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* -- POPUP WINDOW -- */
+.popup-overlay {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(42, 17, 0, 95%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+
+.close-btn i {
+    color: rgb(243, 71, 71);
+    cursor: pointer;
+    font-size: 40px;
+    transition: 0.5s;
+    position: absolute;
+    right: 70px;
+    top: 50px;
+}
+
+.popup-content {
+    max-width: 600px;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+.popup-content iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.popup-overlay-learn {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(42, 17, 0, 95%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+
+.popup-content-learn {
+    max-width: 600px;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+.popup-content-learn iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+/* -- HEADER SECTION -- */
+.main-header {
+    background: rgb(165, 104, 53);
+}
+
+.main-header .container {
+    max-width: 1000px;
+}
+
+.header-flex {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo i {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+
+.logo h2 {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+
+.burger {
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.5s;
+    display: none;
+}
+
+.burger:hover {
+    color: rgb(255, 193, 79);
+}
+
+.menu-holder {
+    position: relative;
+}
+
+.menu-listing {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-listing li {
+    list-style: none;
+}
+
+.menu-listing a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.5s;
+    text-transform: capitalize;
+}
+
+.menu-listing a:hover {
+    color: rgb(255, 193, 79);
+    text-decoration: underline;
+}
+
+/* -- HERO SECTION */
+.hero-banner {
+    background-image: url(https://images.pexels.com/photos/11434425/pexels-photo-11434425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+    background-position: center;
+    padding: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.filter {
+    width: 100%;
+    height: 100%;
+    background: rgba(45, 18, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-banner p {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+/* -- ABOUT SECTION */
+.about h4 {
+    margin-bottom: 12px;
+}
+
+.about h2 {
+    margin-bottom: 15px;
+}
+
+.about p {
+    margin-bottom: 20px;
+}
+
+.learn-click {
+    color: rgb(128, 128, 128);
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.about-flex {
+    display: flex;
+    gap: 55px;
+    align-items: center;
+}
+
+.about-info {
+    width: 50%;
+}
+
+.about-images {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    position: relative;
+}
+
+.about-images .about-img:nth-child(1) {
+    background-image: url(https://images.pexels.com/photos/3089460/pexels-photo-3089460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 49%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about-images .about-img:nth-child(2) {
+    background-image: url(https://images.pexels.com/photos/14746040/pexels-photo-14746040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    position: absolute;
+    width: 49%;
+    bottom: 0;
+    right: 0;
+}
+
+/* -- OFFERS SECTION -- */
+.offers-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card-grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card-holder {
+    background: rgb(255, 255, 255);
+
+}
+
+.card-image-holder {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-holder:nth-of-type(1) .card-image-holder {
+    background-image: url(https://www.traicy.com/wp-content/uploads/2024/04/Snow-Peak-YAKEI-SUITE-ABURAYAMA-FUKUOKA.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-holder:nth-of-type(2) .card-image-holder {
+    background-image: url(https://www.horizonaeifosuites.com/wp-content/uploads/2018/12/Aeifos1-view-Copy.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-holder:nth-of-type(3) .card-image-holder {
+    background-image: url(https://elitetraveler.com/wp-content/uploads/sites/8/2021/10/hammockroom-min-scaled-e1635259422278.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-info {
+    padding: 15px 30px 10px 0;
+}
+
+.booking {
+    border: 1px solid rgb(79, 153, 227);
+    text-align: center;
+    padding: 3px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.booking:hover {
+    background: rgb(79, 153, 227);
+    color: rgb(255, 255, 255);
+}
+
+.booking h4:hover {
+    color: rgb(255, 255, 255);
+}
+
+.animation-info {
+    background: rgb(165, 104, 53);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    visibility: hidden;
+    transition: 0.3s;
+    position: absolute;
+    padding: 10px;
+}
+
+.animation-info-1 {
+    top: 0;
+    right: 100%;
+}
+
+.card-image-holder:hover .animation-info-1 {
+    visibility: visible;
+    right: 0;
+}
+
+.animation-info-2 {
+    bottom: 100%;
+    right: 0;
+}
+
+.card-image-holder:hover .animation-info-2 {
+    visibility: visible;
+    bottom: 0;
+}
+
+.animation-info-3 {
+    top: 0;
+    left: 100%;
+}
+
+.card-image-holder:hover .animation-info-3 {
+    visibility: visible;
+    left: 0;
+}
+
+/* -- VACATION VIDEO SECTION -- */
+.vacation-video {
+    background-color: rgba(88, 38, 2, 50%);
+    background-image: url(https://images.pexels.com/photos/5932576/pexels-photo-5932576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: 150px;
+    text-align: center;
+}
+
+.vacation-video .container {
+    max-width: 400px;
+}
+
+.vacation-video h2,
+.vacation-video h4 {
+    color: rgb(255, 255, 255);
+}
+
+.vacation-video h2 {
+    margin: 10px 0 30px 0;
+}
+
+.play-btn {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.play-btn i {
+    color: rgb(63, 87, 99);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* --- FOOTER SECTION --- */
+footer {
+    background-color: rgb(165, 104, 53);
+    text-align: center;
+    text-transform: capitalize;
+    padding: 20px 0;
+    color: rgb(255, 255, 255);
+}
+
+/* mobile first */
+@media only screen and (min-width: 577px) {
+    .main-header .menu-holder {
+        display: block !important;
+    }
+}
+
+/* -- laptops -- */
+@media only screen and (max-width: 992px) {
+
+    section {
+        padding: 60px 0;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .menu-listing {
+        gap: 30px;
+    }
+
+    .hero-banner {
+        padding: 160px;
+    }
+
+    .about h4 {
+        margin-bottom: 10px;
+    }
+
+    .about h2 {
+        margin-bottom: 13px;
+    }
+
+    .about p {
+        margin-bottom: 18px;
+    }
+
+    .about a {
+        font-size: 15px;
+    }
+
+    .about-flex {
+        gap: 45px;
+    }
+
+    .about-info {
+        width: 45%;
+    }
+
+    .about-images {
+        width: 50%;
+        height: 300px;
+    }
+
+    .offers-header {
+        margin-bottom: 30px;
+    }
+
+    .card-grid {
+        grid-gap: 15px;
+    }
+
+    .card-info {
+        padding: 10px 30px 8px 0;
+    }
+
+    .vacation-video {
+        padding: 130px;
+    }
+
+    .vacation-video h2 {
+        margin: 10px 0 25px 0;
+    }
+
+    .play-btn {
+        height: 60px;
+        width: 60px;
+    }
+
+    .play-btn i {
+        font-size: 18px;
+    }
+}
+
+/* -- tablets -- */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    h1 {
+        font-size: 37px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    .menu-listing {
+        gap: 25px;
+    }
+
+    .hero-banner {
+        padding: 140px;
+    }
+
+    .hero-banner p {
+        font-size: 16px;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .about h4 {
+        margin-bottom: 10px;
+    }
+
+    .about h2 {
+        margin-bottom: 8px;
+    }
+
+    .about p {
+        margin-bottom: 10px;
+    }
+
+    .about a {
+        font-size: 15px;
+    }
+
+    .about-flex {
+        gap: 8px;
+        flex-direction: column;
+    }
+
+    .about-info {
+        width: 90%;
+        margin-bottom: 5px;
+    }
+
+    .about-images {
+        width: 90%;
+        height: 250px;
+    }
+
+    .about-images .about-img:nth-child(1),
+    .about-images .about-img:nth-child(2) {
+        height: 200px;
+    }
+
+    .offers-header {
+        margin-bottom: 25px;
+    }
+
+    .card-grid {
+        grid-gap: 8px;
+    }
+
+    .card-info {
+        padding: 8px 14px 8px 0;
+
+    }
+
+    .vacation-video {
+        padding: 100px;
+    }
+
+    .vacation-video h2 {
+        margin: 10px 0 25px 0;
+    }
+
+    .play-btn {
+        height: 50px;
+        width: 50px;
+    }
+
+    .play-btn i {
+        font-size: 16px;
+    }
+}
+
+/* -- phones -- */
+@media only screen and (max-width: 576px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 13px;
+    }
+
+    body.popup-is-open {
+        margin-right: 0;
+    }
+
+    .main-header {
+        position: relative;
+    }
+
+    .burger {
+        font-size: 30px;
+        display: block;
+    }
+
+    .menu-holder {
+        display: none;
+        background: rgba(42, 17, 0, 95%);
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        z-index: 10;
+        text-align: center;
+        height: calc(100vh - 80px);
+        padding: 60px;
+    }
+
+    .menu-listing {
+        flex-direction: column;
+    }
+
+    .menu-listing li:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .hero-banner {
+        padding: 120px;
+    }
+
+    .hero-banner p {
+        font-size: 15px;
+    }
+
+    .about h4 {
+        margin-bottom: 5px;
+    }
+
+    .about p {
+        margin-bottom: 6px;
+    }
+
+    .about a {
+        font-size: 14px;
+    }
+
+    .about-images {
+        width: 90%;
+        height: 220px;
+    }
+
+    .about-images .about-img:nth-child(1),
+    .about-images .about-img:nth-child(2) {
+        height: 200px;
+    }
+
+    .offers-header {
+        margin-bottom: 17px;
+    }
+
+    .card-grid {
+        grid-gap: 8px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-holder:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .card-image-holder {
+        height: 180px;
+    }
+
+    .card-info {
+        padding: 6px 0px 8px 0;
+        text-align: center;
+    }
+
+    .vacation-video {
+        padding: 100px;
+    }
+
+    .vacation-video h2 {
+        margin: 8px 0 20px 0;
+    }
+
+    .play-btn {
+        height: 45px;
+        width: 45px;
+    }
+
+    .play-btn i {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    section {
+        padding: 30px 0;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .hero-banner {
+        padding: 100px;
+    }
+
+    .about-images {
+        height: 200px;
+    }
+
+    .offers-header {
+        margin-bottom: 10px;
+    }
+
+    .card-grid {
+        grid-gap: 8px;
+    }
+
+    .card-holder:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    .card-image-holder {
+        height: 150px;
+    }
+
+    .card-info {
+        padding: 6px 14px 6px 0;
+    }
+}
